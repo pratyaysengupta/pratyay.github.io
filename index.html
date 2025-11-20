@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Computational Biology Researcher - Pratyay Sengupta">
+    <title>Pratyay Sengupta - Computational Biology Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">Pratyay Sengupta</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h2>Computational Biology Researcher</h2>
+                <p class="subtitle">Exploring the intersection of biology, mathematics, and computer science</p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="content">
+                    <p>Welcome! I am a computational biology researcher focused on leveraging computational methods and mathematical modeling to solve complex biological problems.</p>
+                    <p>My work involves developing and applying algorithms, statistical methods, and machine learning techniques to analyze biological data and gain insights into biological systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section alt-bg">
+            <div class="container">
+                <h2>Research Interests</h2>
+                <div class="research-grid">
+                    <div class="research-item">
+                        <h3>Genomics & Bioinformatics</h3>
+                        <p>Analysis of genomic data, sequence alignment, and variant calling using computational approaches.</p>
+                    </div>
+                    <div class="research-item">
+                        <h3>Systems Biology</h3>
+                        <p>Mathematical modeling of biological systems and networks to understand cellular processes.</p>
+                    </div>
+                    <div class="research-item">
+                        <h3>Machine Learning in Biology</h3>
+                        <p>Application of machine learning and deep learning methods to biological data analysis.</p>
+                    </div>
+                    <div class="research-item">
+                        <h3>Structural Biology</h3>
+                        <p>Computational protein structure prediction and analysis of protein-protein interactions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="container">
+                <h2>Publications</h2>
+                <div class="content">
+                    <p>Publications and research outputs will be listed here.</p>
+                    <p>Please check back for updates on recent publications and preprints.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section alt-bg">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="content">
+                    <p>Feel free to reach out for collaborations or inquiries.</p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> [Your email address]</p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/pratyaysengupta" target="_blank">github.com/pratyaysengupta</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Pratyay Sengupta. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
